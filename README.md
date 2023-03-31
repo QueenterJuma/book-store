@@ -1,5 +1,3 @@
-# bookstore-App
-
 README.md
 One attachment
 • Scanned by Gmail
@@ -27,15 +25,16 @@ One attachment
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖math-magician <a name="about-project"></a>
+# 📖bookstore-App <a name="about-project"></a>
 
-**math-magician** "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations and Read a random math-related quote.
+**bookstore-App** "bookstore-App" is a Single Page Application website that lets users to: Display a list of books, Add a book and Remove a selected book.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
 - CSS
 - JavaScript
 - React
+- Redux
 
 ### Tech Stack <a name="tech-stack"></a>
 - Git and Github
@@ -44,15 +43,12 @@ One attachment
 - HTM
 - CSS
 - React
+- Redux
 - Webpack
 
 ### Key Features <a name="key-features"></a>
 
-- **Setup**
-- **Components**
-- **Events**
-- **Fetch data from API**
-- **Full website**
+- **Initialize project with components (React only)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,7 +66,7 @@ One attachment
  
 <!-- LIVE DEMO -->
  
-## 🚀 Live Demo <a name="[https://magic-calculator-app.onrender.com]()"></a>
+## 🚀 Live Demo <a name="[Coming soon...]()"></a>
  
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -126,8 +122,10 @@ To run the project, open open the terminal and run npm start,it will be opened i
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] **Tests (pair programming)**
-- [x] **Deploy**
+- [x] Add reducers and actions.
+- [x] Use Redux in React components.
+- [x] Connect to API.
+- [x] Styling.
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,8 +133,6 @@ To run the project, open open the terminal and run npm start,it will be opened i
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Colaborators
-- @ShiroYaksha90 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
