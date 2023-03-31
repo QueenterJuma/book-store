@@ -91,7 +91,7 @@ Clone this repository to your desired folder:
  
 ```sh
   cd my-folder
-  git clone git@github.com:https://github.com/QueenterJuma/math-magician.git
+  git clone git@github.com:https://github.com/QueenterJuma/book-store.git
 ```
  
 ### Install
@@ -138,7 +138,7 @@ To run the project, open open the terminal and run npm start,it will be opened i
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/QueenterJuma/math-magician/issues/).
+Feel free to check the [issues page](https://github.com/QueenterJuma/book-store/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
