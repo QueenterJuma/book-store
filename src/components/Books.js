@@ -12,10 +12,10 @@ function Books() {
       author: 'Queen Juma',
       title: 'Fashion Stars',
     },
-    // {
-    //   author: 'Prince Caleb',
-    //   title: 'The power of Love',
-    // },
+    {
+      author: 'Prince Caleb',
+      title: 'The power of Love',
+    },
   ];
   return (
     <div className="book-container">
