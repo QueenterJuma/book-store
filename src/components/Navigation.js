@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { MdPerson } from 'react-icons/md';
+import NavigationItem from './NavigationItem';
 
 function Navigation() {
   return (
@@ -9,12 +9,7 @@ function Navigation() {
         <div className="navigation-item">
           <nav className="nav">
             <h1 className="cms">Bookstore CMS</h1>
-            <Link to="/" className="">
-              Books
-            </Link>
-            <Link to="/categories" className="">
-              Categories
-            </Link>
+            <NavigationItem />
           </nav>
         </div>
         <div className="mdperson">
