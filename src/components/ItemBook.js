@@ -26,7 +26,7 @@ function MyBook({ book }) {
           className="remove-btn"
           onClick={() => dispatch(removeBook(book.item_id))}
         >
-          Removed
+          Remove
         </button>
         <div className="divider" />
         <button type="button" className="edit-btn">
