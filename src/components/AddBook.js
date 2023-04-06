@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { addBook, POSTBOOKS } from '../redux/books/booksSlice';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -14,10 +14,14 @@ const Form = () => {
         item_id: uuidv4(),
         title,
         author,
+        category: null,
       };
-      dispatch(addBook(ADDBOOK));
-      setTitle('');
-      setAuthor('');
+      dispatch(POSTBOOKS(ADDBOOK))
+        .then(() => {
+          dispatch(addBook(ADDBOOK));
+          setTitle('');
+          setAuthor('');
+        });
     }
   };
   return (
@@ -38,7 +42,7 @@ const Form = () => {
           required
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button className="submit-btn" type="submit">ADD</button>
+        <button className="submit-btn" type="submit">ADD BOOK</button>
       </form>
     </div>
   );
