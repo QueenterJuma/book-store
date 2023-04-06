@@ -1,49 +1,57 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/booksSlice';
+import { useDispatch } from 'react-redux';
+import { useState } from 'react';
+import { removeBook, DELETEBOOKS } from '../redux/books/booksSlice';
 
 function MyBook({ book }) {
   const dispatch = useDispatch();
-  // const { title, author } = props;
+  const [progress, setProgress] = useState(45);
+  const handleRemove = (EndPoint) => {
+    dispatch(DELETEBOOKS(EndPoint))
+      .then(dispatch(removeBook(EndPoint)));
+  };
+  const handleProgress = () => {
+    let pro = progress;
+    if (pro < 100) {
+      setProgress(pro += 3);
+    }
+  };
   return (
     <div className="mybook">
-      <div className="title">
-        Title:
-        {book.title}
+      <div className="first-section">
+        <h2 className="title">{book.title}</h2>
+        <span className="author">{book.author}</span>
+        <div className="book-option">
+          <button type="button">Comments</button>
+          <button type="button" onClick={() => handleRemove(book.item_id)}>
+            Remove
+          </button>
+          <button type="button" className="edit-btn">
+            Edit
+          </button>
+        </div>
       </div>
-      <div className="author">
-        Author:
-        {book.author}
-      </div>
-      <div className="book-option">
-        <button type="button" className="comments-btn">
-          Comments
-        </button>
-        <div className="divider" />
-        <button
-          type="button"
-          className="remove-btn"
-          onClick={() => dispatch(removeBook(book.item_id))}
-        >
-          Remove
-        </button>
-        <div className="divider" />
-        <button type="button" className="edit-btn">
-          Edit
-        </button>
-      </div>
-      <div className="second-section">
-        <p>74% completed</p>
-      </div>
-      <div className="divider" />
-      <div className="Third-section">
-        <p>CURRENT CHAPTER</p>
-        <p>CHAPTER 6</p>
-        <br />
-        <button type="button" className="update-progress">
-          UPDATE PROGRESS
-        </button>
+      <div className=" second-section">
+        <div className="pro-section">
+          <div className="pro-content">
+            <span className="pro-percentage">
+              {progress}
+              %
+            </span>
+            <span className="pro-complete">completed</span>
+          </div>
+        </div>
+        <div className="Third-section">
+          <span className="third-current">CURRENT CHAPTER</span>
+          <span className="third-chapter">CHAPTER 12</span>
+          <button
+            type="button"
+            className="update-progress"
+            onClick={handleProgress}
+          >
+            UPDATE PROGRESS
+          </button>
+        </div>
       </div>
     </div>
   );
