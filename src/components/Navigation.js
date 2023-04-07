@@ -4,19 +4,17 @@ import NavigationItem from './NavigationItem';
 
 function Navigation() {
   return (
-    <div className="navigation">
-      <div className="navigation-container">
-        <div className="navigation-item">
-          <nav className="nav">
-            <h1 className="cms">Bookstore CMS</h1>
-            <NavigationItem />
-          </nav>
-        </div>
-        <div className="mdperson">
-          <MdPerson className="profile" />
-        </div>
+    <nav className="navigation">
+      <div
+        className="navigation-item"
+      >
+        <h1 className="cms">Bookstore CMS</h1>
+        <NavigationItem />
       </div>
-    </div>
+      <div>
+        <MdPerson className="profile" />
+      </div>
+    </nav>
   );
 }
 

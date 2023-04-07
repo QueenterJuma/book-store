@@ -52,6 +52,7 @@ One attachment
 - **Add reducers and actions.**
 - **Use Redux in React components.**
 - **Connect to API.**
+- **Styling.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +126,6 @@ To run the project, open open the terminal and run npm start,it will be opened i
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] Styling.
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
