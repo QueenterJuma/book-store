@@ -7,7 +7,7 @@
 }
 
 :root {
-  --black:  var(--black);
+  --black: var(--black);
   --medium-blue: #307bbe;
   --pale-grey: #f5f6fa;
   --white: #e8e8e8;
@@ -15,8 +15,8 @@
   --z: #fafafa;
   --cool-blue: #4386bf;
   --azure: #0290ff;
-  --font-M: Montserrat, Arial, Helvetica, sans-serif;
-  --font-R: RobotoSlab, Arial, Helvetica, sans-serif;
+  --font-M: montserrat, arial, helvetica, sans-serif;
+  --font-R: robotoslab, arial, helvetica, sans-serif;
 }
 
 body {
