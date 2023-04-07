@@ -29,20 +29,20 @@ const Form = () => {
       <h2> ADD NEW BOOK</h2>
       <form onSubmit={handelSubmit}>
         <input
-          className="title"
+          className="title-input"
           placeholder="Book title"
           type="text"
           required
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          className="author"
+          className="author-input"
           placeholder="Book author"
           type="text"
           required
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button className="submit-btn" type="submit">ADD BOOK</button>
+        <button className="form-btn" type="submit">ADD BOOK</button>
       </form>
     </div>
   );
