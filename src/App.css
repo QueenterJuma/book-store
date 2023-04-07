@@ -7,6 +7,7 @@
 }
 
 :root {
+  --black:  var(--black);
   --medium-blue: #307bbe;
   --pale-grey: #f5f6fa;
   --white: #e8e8e8;
@@ -14,6 +15,8 @@
   --z: #fafafa;
   --cool-blue: #4386bf;
   --azure: #0290ff;
+  --font-M: Montserrat, Arial, Helvetica, sans-serif;
+  --font-R: RobotoSlab, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -46,7 +49,7 @@ body {
 
 .cms {
   padding-right: 2.938rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-M);
   font-size: 2rem;
   font-weight: bold;
   color: var(--azure);
@@ -56,10 +59,10 @@ body {
   text-decoration: none;
   margin-right: 2rem;
   opacity: 0.5;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-M);
   font-size: 1.1rem;
   letter-spacing: 2px;
-  color: #121212;
+  color: var(--black);
 }
 
 .active {
@@ -85,14 +88,14 @@ body {
 }
 
 .title {
-  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-family: var(--font-R);
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.2px;
-  color: #121212;
+  color: var(--black);
 }
 
 .author {
@@ -104,7 +107,7 @@ body {
   border: none;
   background-color: var(--white-two);
   margin-right: 0.938rem;
-  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-family: var(--font-R);
   font-size: 0.875rem;
   font-weight: 300;
   color: var(--cool-blue);
@@ -143,17 +146,17 @@ body {
 
 .pro-percentage {
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-M);
   font-size: 2rem;
-  color: #121212;
+  color: var(--black);
 }
 
 .pro-complete {
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-M);
   font-size: 0.875rem;
-  color: #121212;
+  color: var(--black);
 }
 
 .Third-section {
@@ -165,16 +168,16 @@ body {
 .third-chapter {
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-family: var(--font-R);
   font-size: 0.813rem;
   font-weight: 300;
-  color: #121212;
+  color: var(--black);
 }
 
 .third-chapter {
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
   font-size: 1rem;
-  color: #121212;
+  color: var(--black);
   opacity: 1;
 }
 
@@ -184,7 +187,7 @@ body {
   border: none;
   border-radius: 3px;
   background-color: var(--azure);
-  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-family: var(--font-R);
   font-size: 0.813rem;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -199,7 +202,7 @@ body {
 
 .form h2 {
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-M);
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -0.18px;
@@ -213,7 +216,7 @@ body {
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: var(--white-two);
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-M);
   font-size: 1rem;
   letter-spacing: -0.15px;
 }
@@ -228,7 +231,7 @@ body {
   border: none;
   border-radius: 3px;
   background-color: var(--azure);
-  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-family: var(--font-R);
   font-size: 0.813rem;
   font-weight: bold;
   letter-spacing: 0.5px;
