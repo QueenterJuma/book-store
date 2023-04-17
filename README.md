@@ -67,12 +67,11 @@ One attachment
 </details>
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
-<!-- LIVE DEMO -->
- 
-## 🚀 Live Demo <a name="(https://bookstore-app-zpb4.onrender.com)"></a>
- 
- 
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo On Render.com](https://bookstore-app-zpb4.onrender.com)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 <!-- GETTING STARTED -->
